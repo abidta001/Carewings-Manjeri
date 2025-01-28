@@ -36,7 +36,7 @@
                     <div class="d-inline-flex align-items-center">
                         <p><i class="fa fa-envelope mr-2"></i>carewingsmanjeri@gmail.com</p>
                         <p class="text-body px-3">|</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+91 +919446767057 </p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91 9446767057 </p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
@@ -79,7 +79,7 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="package.html" class="nav-item nav-link">Packages</a>
-                        <a href="#service" class="nav-item nav-link">Services</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
@@ -98,6 +98,7 @@
         </div>
     </div>
     <!-- Navbar End -->
+     
 
 
     <!-- Carousel Start -->
@@ -218,7 +219,7 @@
 
 
    <!-- Booking Start -->
-<div class="container-fluid booking mt-5 pb-5">
+   <div class="container-fluid booking mt-5 pb-5">
     <div class="container pb-5">
         <div class="bg-light shadow" style="padding: 30px;">
             <form id="bookingForm">
@@ -229,9 +230,26 @@
                                 <div class="mb-3 mb-md-0">
                                     <select id="destination" class="custom-select px-4" style="height: 47px;">
                                         <option selected>Destination</option>
-                                        <option value="Destination 1">Destination 1</option>
-                                        <option value="Destination 2">Destination 2</option>
-                                        <option value="Destination 3">Destination 3</option>
+                                        <option value="Azerbaijan">Azerbaijan</option>
+                                        <option value="China">China</option>
+                                        <option value="Europe">Europe</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Kazakhstan">Kazakhstan</option>
+                                        <option value="Langkawi">Langkawi</option>
+                                        <option value="Maldives">Maldives</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Phuket">Phuket</option>
+                                        <option value="Sri Lanka">Sri Lanka</option>
+                                        <option value="Thailand">Thailand</option>
+                                        <option value="Agra">Agra</option>
+                                        <option value="Ayodhya">Ayodhya</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Hyderabad">Hyderabad</option>
+                                        <option value="Kashmir">Kashmir</option>
+                                        <option value="Manali">Manali</option>
+                                        <option value="Varanasi">Varanasi</option>
+                                        <option value="Other">Other</option>
                                     </select>
                                 </div>
                             </div>
@@ -249,9 +267,15 @@
                                 <div class="mb-3 mb-md-0">
                                     <select id="duration" class="custom-select px-4" style="height: 47px;">
                                         <option selected>Duration</option>
-                                        <option value="1 Day">1 Day</option>
                                         <option value="2 Days">2 Days</option>
                                         <option value="3 Days">3 Days</option>
+                                        <option value="4 Days">4 Days</option>
+                                        <option value="5 Days">5 Days</option>
+                                        <option value="6 Days">6 Days</option>
+                                        <option value="7 Days">7 Days</option>
+                                        <option value="8 Days">8 Days</option>
+                                        <option value="9 Days">9 Days</option>
+                                        <option value="10 Days">10 Days</option>
                                     </select>
                                 </div>
                             </div>
@@ -265,7 +289,49 @@
         </div>
     </div>
 </div>
-<!-- Booking End -->
+
+<!-- Scrolling Updates Section -->
+<div class="scrolling-updates">
+    <span>🎉 Explore our latest travel packages! 🚀 Book now and get 20% off on your next adventure. 🌍 Call us: +91 9446767057 | 🌟 Discover amazing destinations with us! 🛫 Book today and make your dream trip a reality! | ✈️ Exclusive offers on holiday packages – Contact us now!</span>
+</div>
+
+<!-- CSS for Scrolling Effect -->
+<style>
+.scrolling-updates {
+    background-color: rgb(233, 14, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.scrolling-updates span {
+    display: inline-block;
+    white-space: nowrap;
+    animation: initialShow 1s linear 1, scrollText 20s linear infinite; /* Start immediately, then scroll */
+}
+
+@keyframes initialShow {
+    0% {
+        transform: translateX(0); /* Text is fully visible */
+    }
+    100% {
+        transform: translateX(0); /* No movement during initial display */
+    }
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Start just off-screen after initial delay */
+    }
+    100% {
+        transform: translateX(-100%); /* Scroll off-screen to the left */
+    }
+}
+</style>
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -416,44 +482,6 @@
     <!-- Destination Start -->
 
 
-    <!-- Service Start -->
-     <div id="service">
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
-            <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Services</h6>
-                <h1>Tours & Travel Services</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
-                        <h5 class="mb-2">Travel Guide</h5>
-                        <p class="m-0">Explore captivating destinations, rich history, and vibrant cultures with our expertly curated travel guides</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
-                        <h5 class="mb-2">Ticket Booking</h5>
-                        <p class="m-0">Easily book your tickets for top destinations with our quick and secure booking process</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
-                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
-                        <h5 class="mb-2">Hotel Booking</h5>
-                        <p class="m-0">Book luxurious stays at the best hotels, tailored to fit your budget. Experience comfort and convenience</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- Service End -->
-
-
-    
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
@@ -538,6 +566,7 @@
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
                     <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="services.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
                     <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                     <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
             
@@ -547,6 +576,7 @@
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
                 <p><i class="fa fa-map-marker-alt mr-2"></i> Malayil arcade Jaseela junction, Melakkam, Manjeri, Kerala 676123</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+91 9446767057</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 9447306078</p>
                 <p><i class="fa fa-envelope mr-2"></i>carewingsmanjeri@gmail.com</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">

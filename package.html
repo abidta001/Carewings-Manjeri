@@ -79,6 +79,7 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="package.html" class="nav-item nav-link">Packages</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
@@ -111,80 +112,193 @@
     </div>
     <!-- Header End -->
 
-
-    <!-- Booking Start -->
-<div class="container-fluid booking mt-5 pb-5">
-    <div class="container pb-5">
-        <div class="bg-light shadow" style="padding: 30px;">
-            <form id="bookingForm">
-                <div class="row align-items-center" style="min-height: 60px;">
-                    <div class="col-md-10">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select id="destination" class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Destination</option>
-                                        <option value="Destination 1">Destination 1</option>
-                                        <option value="Destination 2">Destination 2</option>
-                                        <option value="Destination 3">Destination 3</option>
-                                    </select>
+<!--Booking start-->
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <form id="bookingForm">
+                    <div class="row align-items-center" style="min-height: 60px;">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <select id="destination" class="custom-select px-4" style="height: 47px;">
+                                            <option selected>Destination</option>
+                                            <option value="Azerbaijan">Azerbaijan</option>
+                                            <option value="China">China</option>
+                                            <option value="Europe">Europe</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Kazakhstan">Kazakhstan</option>
+                                            <option value="Langkawi">Langkawi</option>
+                                            <option value="Maldives">Maldives</option>
+                                            <option value="Malaysia">Malaysia</option>
+                                            <option value="Phuket">Phuket</option>
+                                            <option value="Sri Lanka">Sri Lanka</option>
+                                            <option value="Thailand">Thailand</option>
+                                            <option value="Agra">Agra</option>
+                                            <option value="Ayodhya">Ayodhya</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Goa">Goa</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Kashmir">Kashmir</option>
+                                            <option value="Manali">Manali</option>
+                                            <option value="Varanasi">Varanasi</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="text" id="departDate" class="form-control p-4" placeholder="Depart Date" />
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <input type="text" id="departDate" class="form-control p-4" placeholder="Depart Date" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <input type="text" id="returnDate" class="form-control p-4" placeholder="Return Date" />
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <input type="text" id="returnDate" class="form-control p-4" placeholder="Return Date" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="mb-3 mb-md-0">
-                                    <select id="duration" class="custom-select px-4" style="height: 47px;">
-                                        <option selected>Duration</option>
-                                        <option value="1 Day">1 Day</option>
-                                        <option value="2 Days">2 Days</option>
-                                        <option value="3 Days">3 Days</option>
-                                    </select>
+                                <div class="col-md-3">
+                                    <div class="mb-3 mb-md-0">
+                                        <select id="duration" class="custom-select px-4" style="height: 47px;">
+                                            <option selected>Duration</option>
+                                            <option value="2 Days">2 Days</option>
+                                            <option value="3 Days">3 Days</option>
+                                            <option value="4 Days">4 Days</option>
+                                            <option value="5 Days">5 Days</option>
+                                            <option value="6 Days">6 Days</option>
+                                            <option value="7 Days">7 Days</option>
+                                            <option value="8 Days">8 Days</option>
+                                            <option value="9 Days">9 Days</option>
+                                            <option value="10 Days">10 Days</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="sendMessage()" style="height: 47px;">Submit</button>
+                        </div>
                     </div>
-                    <div class="col-md-2">
-                        <button type="button" class="btn btn-primary btn-block" onclick="sendMessage()" style="height: 47px;">Submit</button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<!-- Booking End -->
-
+<!--Booking End-->
 
     <!-- Packages Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Packages</h6>
-                <h1>Pefect Tour Packages</h1>
+                <h1>Perfect Tour Packages</h1>
             </div>
             <div class="row">
+                <!-- Repeat this block for 18 packages -->
+                <!-- Package 1 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-1.jpg" alt="carewingstravels">
+                        <img class="img-fluid" src="img/packages/azarbaijan.jpg" alt="carewingstravels">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Azerbaijan</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/china.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>China</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Explore the world with unforgettable experiences</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat and modify details for other packages -->
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/europe.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Europe</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Journey to the most beautiful destinations</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(320)</small></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/japan.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Japan</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Your next adventure is just a click away</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                 <!-- commented part -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/kazakhstan.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Kazakhstan</small>
+                                <!-- <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
+                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small> -->
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Embark on the trip of a lifetime</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <!-- <h5 class="m-0">$350</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat and modify details for other packages -->
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/langkawi.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Langkawi</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Travel far and wide with our exclusive packages</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(320)</small></h6>
                                 </div>
                             </div>
                         </div>
@@ -192,18 +306,51 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-2.jpg" alt="carewingstravels">
+                        <img class="img-fluid" src="img/packages/maldives.jpg" alt="carewingstravels">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Maldives</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Explore new horizons with our amazing tours</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/malaysia.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Malaysia</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Find your dream destination with us</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat and modify details for other packages -->
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/phuket.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Phuket</small>
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Discover hidden gems across the globe</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(320)</small></h6>
                                 </div>
                             </div>
                         </div>
@@ -211,18 +358,54 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-3.jpg" alt="carewingstravels">
+                        <img class="img-fluid" src="img/packages/srilanka.jpg" alt="carewingstravels">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Srilanka</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Experience the beauty of the world like never before</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/agra.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Agra</small>
+                                
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Create memories in breathtaking locations</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat and modify details for other packages -->
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/ayodhya-nagri-884352.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Ayodhya</small>
+                                
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Explore the wonders of the world with us</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(320)</small></h6>
+                               
                                 </div>
                             </div>
                         </div>
@@ -230,18 +413,54 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-4.jpg" alt="carewingstravels">
+                        <img class="img-fluid" src="img/packages/delhi.jpg" alt="carewingstravels">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Delhi</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Explore the wonders of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/goa.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Goa</small>
+                                
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Your next great adventure starts here</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat and modify details for other packages -->
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/hydrabad.jpeg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Hyderabad</small>
+                                
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Travel with us to the world's most captivating destination</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(320)</small></h6>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -249,42 +468,60 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-5.jpg" alt="carewingstravels">
+                        <img class="img-fluid" src="img/packages/kashmir-91218.jpg" alt="carewingstravels">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Kashmir</small>
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Escape to paradise with our travel packages</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Package 2 -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="package-item bg-white mb-2">
-                        <img class="img-fluid" src="img/package-6.jpg" alt="carewingstravels">
+                        <img class="img-fluid" src="img/packages/manali-1978065.jpg" alt="carewingstravels">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
-                                <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
-                                <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Manali</small>
+                               
                             </div>
-                            <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
+                            <a class="h5 text-decoration-none" href="">Journey beyond the ordinary with our exclusive packages</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
-                                    <h5 class="m-0">$350</h5>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Repeat and modify details for other packages -->
+                <!-- Package 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="package-item bg-white mb-2">
+                        <img class="img-fluid" src="img/packages/varanasi-7188191.jpg" alt="carewingstravels">
+                        <div class="p-4">
+                            <div class="d-flex justify-content-between mb-3">
+                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Varanasi</small>
+                               
+                            </div>
+                            <a class="h5 text-decoration-none" href="">Let the adventure of your dreams begin here</a>
+                            <div class="border-top mt-4 pt-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.8 <small>(320)</small></h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add 15 more package blocks similarly -->
             </div>
         </div>
     </div>
@@ -324,6 +561,7 @@
             <div class="d-flex flex-column justify-content-start">
                 <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About</a>
                 <a class="text-white-50 mb-2" href="package.html"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                <a class="text-white-50 mb-2" href="services.html"><i class="fa fa-angle-right mr-2"></i>Services</a>
                 <a class="text-white-50 mb-2" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact</a>
                 <a class="text-white-50 mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
         
@@ -333,6 +571,7 @@
             <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
             <p><i class="fa fa-map-marker-alt mr-2"></i> Malayil arcade Jaseela junction, Melakkam, Manjeri, Kerala 676123</p>
             <p><i class="fa fa-phone-alt mr-2"></i>+91 9446767057</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+91 9447306078</p>
             <p><i class="fa fa-envelope mr-2"></i>carewingsmanjeri@gmail.com</p>
             <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
             <div class="w-100">
